@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import './Contacto.css'
+//import './Contacto.css'
 import Button from './Button.jsx'
 
 
-function Contacto(props) {
+function Contacto() {
     const [nombreCompleto, setNombreCompleto] = useState({
         nombre: '',
         apellido: '',
@@ -63,7 +63,7 @@ return (
   
 }
 
-export default Form
+export default Contacto
 
 //Duda: cómo se haría para que solo se actualice el valor de texto cuando se envía hace click en el botón submit (si para que se guarde 
 // con el onChange lo que hay que hacer es event.target.value --> tendría que hacer referencia a otreo componente distinto (el input para ingresar tarea) al 

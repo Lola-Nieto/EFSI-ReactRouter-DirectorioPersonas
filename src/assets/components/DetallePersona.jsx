@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom"
-import {Personas} from "EFSI-ReactRouter-DirectorioPersonas/src/assets/people.json"
+import Personas from "../people.json"
 
-const Persona = () => {
+const DetallePersona = () => {
     const {id} = useParams();
 
     const persona = Personas.filter((persona) => persona.id === id); 
@@ -29,7 +29,8 @@ const Persona = () => {
         
 
         </>
+
     );
 };
 
-export default Persona;
+export default DetallePersona;
