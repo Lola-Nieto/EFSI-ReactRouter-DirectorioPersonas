@@ -13,7 +13,7 @@ function Contacto() {
 
       const expresionMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-      const [esValido, setEsValido] = useState(false); 
+      const [esValido, setEsValido] = useState(true); 
       
       const handleChangeNombre = (event) => {
         const { name, value } = event.target;
@@ -47,9 +47,9 @@ return (
                 <label for="apellido">Apelldio: </label> 
                 <input type="text" name="apellido" placeholder="Ingrese su apelldio" onChange={handleChangeNombre} value={nombreCompleto.apellido}/>
                 <label for="email">Mail: </label> 
-                <input type="mail" name="email" placeholder="Ingrese su correo electrónico" onChange={(e) => setEmail(e.target.value)} value={formData.email}/>
+                <input type="mail" name="email" placeholder="Ingrese su correo electrónico" onChange={(e) => setEmail(e.target.value)} value={email}/>
                 <label for="edad">Edad: </label> 
-                <input type="number" name="edad" placeholder="Ingrese su edad" min="1" max="130" onChange={(e) => setEdad(e.target.value)} value={formData.edad}/>
+                <input type="number" name="edad" placeholder="Ingrese su edad" min="1" max="130" onChange={(e) => setEdad(e.target.value)} value={edad}/>
                 <Button texto="Enviar ➡️" type="submit" className="u-full-width button-primary" id ="botonIngreso"/>           
 
 

@@ -1,25 +1,23 @@
 import {useParams} from "react-router-dom"
-import Personas from "../people.json"
+import personas from "../people.json"
 
 const DetallePersona = () => {
     const {id} = useParams();
 
-    const persona = Personas.filter((persona) => persona.id === id); 
+    const personaBuscada = personas.find((persona) => persona.id == id); 
 
     const esMayorDeEdad = () => {
-        if(persona.edad >= 18){
-            return("Mayor de edad");
-        }else{
-            return("Menor de edad");
-        }
+        return persona.edad >= 18 ? "Mayor de edad" : "Menor de edad";
+
     }
     return (
         <>
-        {!persona &&
+        {personaBuscada &&
             <div className="detallePersona">
-            <p>Nombre completo: {persona.nombre} {persona.apellido} </p>
-            <p>Email: {persona.email}  </p>
-            <p>Edad: {persona.edad}  </p>
+                
+            <p>Nombre completo: {personaBuscada.nombre} {personaBuscada.apellido} </p>
+            <p>Email: {personaBuscada.email}  </p>
+            <p>Edad: {personaBuscada.edad}  </p>
             <p> {esMayorDeEdad()}  </p>
             </div>
         

@@ -1,15 +1,16 @@
-import Personas from "../people.json"
+import personas from "../people.json"
 import Card from "./Card";
+import "./Card.css";
 
-
-//import './Home.css'
 
 const Home = () => {
   return (
     <>
-      {Personas.map(persona => (
-        <Card key={persona.id} id={persona.id} />
-      ))}
+      <div className="cardContainer">
+        {personas.map(persona => (
+          <Card key={persona.id} id={persona.id} />
+        ))}
+      </div>
     </>
   )
 }
