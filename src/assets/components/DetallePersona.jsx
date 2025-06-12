@@ -5,24 +5,26 @@ const DetallePersona = () => {
     const {id} = useParams();
 
     const personaBuscada = personas.find((persona) => persona.id == id); 
+    if(!personaBuscada){
+        return   ( <h1>Detalle de Persona -  El ID no existe </h1>)      
+    }
 
     const esMayorDeEdad = () => {
-        return persona.edad >= 18 ? "Mayor de edad" : "Menor de edad";
+        return personaBuscada.edad >= 18 ? "Mayor de edad" : "Menor de edad";
 
     }
     return (
         <>
         {personaBuscada &&
             <div className="detallePersona">
-                
-            <p>Nombre completo: {personaBuscada.nombre} {personaBuscada.apellido} </p>
-            <p>Email: {personaBuscada.email}  </p>
-            <p>Edad: {personaBuscada.edad}  </p>
-            <p> {esMayorDeEdad()}  </p>
+                      
+                <h1>Detalle de {personaBuscada.nombre}</h1> 
+                <p>Nombre completo: {personaBuscada.nombre} {personaBuscada.apellido} </p>
+                <p>Email: {personaBuscada.email}  </p>
+                <p>Edad: {personaBuscada.edad}  </p>
+                <p> {esMayorDeEdad()}  </p>
             </div>
         
-        }{
-            <p> El ID no existe </p>
         }
         
 

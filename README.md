@@ -1,6 +1,7 @@
 YA FUNCIONA
 Contacto
 Layout correcto - links
+404
 
 PROBLEMAS
 Persona (detalle) --> "EL ID no existe"

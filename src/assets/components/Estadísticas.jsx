@@ -13,6 +13,7 @@ function Estadísticas() {
         return contador;
     }
     const calcularPromedioDeEdad = () => {
+        let sumaEdades = 0;
         {personas.map(persona => (
             sumaEdades+= persona.edad
         ))}
@@ -21,6 +22,7 @@ function Estadísticas() {
   return (
     <>
     <div className="estadisticas">
+        <h1>Estadísticas</h1>
         <li>
             <ul><p> Cantidad total de personas: {personas.length} </p></ul>
             <ul><p> Cantidad de personas que tienen más de 35 años: {calcularMayoresDeCiertaEdad(35)} </p></ul>

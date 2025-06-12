@@ -6,6 +6,9 @@
   gap: 20px;
   justify-content: center;
   font-weight: bold;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar a {

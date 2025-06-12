@@ -39,6 +39,8 @@ function Contacto() {
     
 return (
     <>
+        <h1>Form de contacto</h1>
+
         <h2>Crear mi Cita</h2>
         <form onSubmit={handleSubmit}>
             <div id="divIngreso">
