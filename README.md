@@ -2,13 +2,13 @@ YA FUNCIONA
 Contacto
 Layout correcto - links
 404
+Persona (detalle)
+Home
+Card
+Estadísticas
 
 PROBLEMAS
-Persona (detalle) --> "EL ID no existe"
-Home --> CSS (cuadrado en el medio de la pantalla con la navbar)
-Card --> No se muestran las cards en la Home (No le llegan los datos de la persona??)
-Estadísticas --> No se muestra nada
-
+CSS
  
 
 TEORÍA
