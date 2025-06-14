@@ -1,6 +1,6 @@
 import personas from "../people.json"
 import Card from "./Card";
-//import "./Card.css";
+import "./Card.css";
 
 
 const Home = () => {

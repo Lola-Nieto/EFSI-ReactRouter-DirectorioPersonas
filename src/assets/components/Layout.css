@@ -1,28 +1,25 @@
 .navbar {
-  background-color: #222831;
+  background-color: #0d47a1;
   color: #ffffff;
   padding: 16px;
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  gap: 40px;
+  justify-content: flex-start;
   font-weight: bold;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  margin: 0%;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: #e3f2fd;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  color: #00adb5;
-  text-decoration: underline;
+  color: #53a8fc;
 }
 
-main {
-  background-color: #f0f0f0;
-  min-height: 100vh;
-  padding: 20px;
+.pagina{
+  margin-top: 100px;
+
 }

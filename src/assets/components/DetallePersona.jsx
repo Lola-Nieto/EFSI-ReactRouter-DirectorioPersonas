@@ -1,6 +1,8 @@
 import {useParams} from "react-router-dom"
 import personas from "../people.json"
 
+import './DetallePersona.css'
+
 const DetallePersona = () => {
     const {id} = useParams();
 
@@ -16,13 +18,16 @@ const DetallePersona = () => {
     return (
         <>
         {personaBuscada &&
-            <div className="detallePersona">
+            <div className="todo">
                       
                 <h1>Detalle de {personaBuscada.nombre}</h1> 
-                <p>Nombre completo: {personaBuscada.nombre} {personaBuscada.apellido} </p>
-                <p>Email: {personaBuscada.email}  </p>
-                <p>Edad: {personaBuscada.edad}  </p>
-                <p> {esMayorDeEdad()}  </p>
+
+                <div className="detallePersona">
+                    <p>Nombre completo: <span className="datoDestacado">{personaBuscada.nombre} {personaBuscada.apellido}</span> </p>
+                    <p>Email: <span className="datoDestacado">{personaBuscada.email}</span>  </p>
+                    <p>Edad: <span className="datoDestacado">{personaBuscada.edad}</span>  </p>
+                    <p className="datoDestacado">{esMayorDeEdad()}  </p>
+                </div>
             </div>
         
         }

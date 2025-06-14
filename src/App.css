@@ -1,22 +1,28 @@
-#root {
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-  justify-content: flex-start;
-  background-color: aliceblue;
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #e3f2fd; 
+  color: #0d47a1;
 }
 
-
-
-.card {
-  padding: 2em;
+main {
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f4f4f4;
 }
 
-.read-the-docs {
-  color: #888;
+h1, h2 {
+  text-align: center;
+  color: #0d47a1;
+
 }
 
-body{
-  display: block;
+.datoDestacado {
+  color: #53a8fc;
+  font-weight: bolder;
 }

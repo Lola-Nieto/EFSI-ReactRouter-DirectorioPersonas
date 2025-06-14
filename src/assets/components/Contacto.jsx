@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-//import './Contacto.css'
+import './Contacto.css'
 import Button from './Button.jsx'
 
 
@@ -8,7 +8,7 @@ function Contacto() {
         nombre: '',
         apellido: '',
       });
-      const [edad, setEdad] = useState(-1);
+      const [edad, setEdad] = useState();
       const [email, setEmail] = useState("");
 
       const expresionMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -33,8 +33,14 @@ function Contacto() {
             setEsValido(esValidoAhora);
             if(esValidoAhora){
                 alert("Se envió el formulario con éxito");
-            }
-      }
+                Array.from(document.querySelectorAll("input")).forEach(
+                    input => (input.value = "")
+                );
+                this.setState({
+                  itemvalues: [{}]
+                });
+             }
+        }
        
     
 return (
@@ -52,7 +58,7 @@ return (
                 <input type="mail" name="email" placeholder="Ingrese su correo electrónico" onChange={(e) => setEmail(e.target.value)} value={email}/>
                 <label for="edad">Edad: </label> 
                 <input type="number" name="edad" placeholder="Ingrese su edad" min="1" max="130" onChange={(e) => setEdad(e.target.value)} value={edad}/>
-                <Button texto="Enviar ➡️" type="submit" className="u-full-width button-primary" id ="botonIngreso"/>           
+                <Button texto="Enviar" type="submit" />          
 
 
                 {!esValido && <p id="msjError">El formulario NO es válido.</p>}

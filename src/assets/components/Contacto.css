@@ -1,0 +1,43 @@
+form {
+  background-color: #e3f2fd; 
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#divIngreso {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+input{
+  padding: 10px;
+  border: 2px solid #bbdefb;
+  background-color: #e1f5fe;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.7s ease;
+  outline: none;
+  color: #1976d2;
+
+}
+
+input:focus {
+  border-color: #1976d2;
+}
+
+
+#msjError {
+  color: rgb(157, 20, 20);
+  font-weight: bold;
+  text-align: center;
+}

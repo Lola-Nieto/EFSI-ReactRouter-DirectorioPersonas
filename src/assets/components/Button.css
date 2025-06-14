@@ -1,0 +1,15 @@
+.acciones {
+  background-color: #e3f2fd; 
+  color:#53a8fc;  
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.acciones:hover {
+  background-color: #53a8fc; 
+  color:#e3f2fd;
+
+}

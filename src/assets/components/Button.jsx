@@ -1,10 +1,10 @@
 import React from 'react'
-//import './Button.css'
+import './Button.css'
 
 function Button(props) {
     return (
       <>
-      <button  className='acciones'><span> {props.texto}</span> </button >
+      <button  className='acciones'> {props.texto} </button >
       </>
     )
   }

@@ -1,7 +1,6 @@
 import personas from "../people.json"
 
 
-//import './Estadísticas.css'
 
 function Estadísticas() {
 
@@ -24,11 +23,11 @@ function Estadísticas() {
     <div className="estadisticas">
         <h1>Estadísticas</h1>
         <li>
-            <ul><p> Cantidad total de personas: {personas.length} </p></ul>
-            <ul><p> Cantidad de personas que tienen más de 35 años: {calcularMayoresDeCiertaEdad(35)} </p></ul>
-            <ul><p> Personas mayores de edad: {calcularMayoresDeCiertaEdad(17)} </p></ul>
-            <ul><p> Personas menores de edad: {personas.length - calcularMayoresDeCiertaEdad(17)} </p></ul>
-            <ul><p> Promedio de edad: {calcularPromedioDeEdad()} </p></ul>
+            <ul><p> Cantidad total de personas:<span className="datoDestacado">{personas.length}</span></p></ul>
+            <ul><p> Cantidad de personas que tienen más de 35 años: <span className="datoDestacado">{calcularMayoresDeCiertaEdad(35)}</span> </p></ul>
+            <ul><p> Personas mayores de edad: <span className="datoDestacado">{calcularMayoresDeCiertaEdad(17)}</span> </p></ul>
+            <ul><p> Personas menores de edad: <span className="datoDestacado">{personas.length - calcularMayoresDeCiertaEdad(17)}</span> </p></ul>
+            <ul><p> Promedio de edad: <span className="datoDestacado">{calcularPromedioDeEdad()}</span> </p></ul>
 
 
         </li>
